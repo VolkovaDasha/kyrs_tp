@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookMarketWeb", "BookMarketWeb\BookMarketWeb.csproj", "{CCDCA44A-A1FB-4D96-AA3A-EEF720A9533D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookMarketWebTests", "BookMarketWebTests\BookMarketWebTests.csproj", "{55D10B99-B415-48AF-9EBC-F97327ACBBD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCDCA44A-A1FB-4D96-AA3A-EEF720A9533D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCDCA44A-A1FB-4D96-AA3A-EEF720A9533D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCDCA44A-A1FB-4D96-AA3A-EEF720A9533D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCDCA44A-A1FB-4D96-AA3A-EEF720A9533D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D10B99-B415-48AF-9EBC-F97327ACBBD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D10B99-B415-48AF-9EBC-F97327ACBBD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D10B99-B415-48AF-9EBC-F97327ACBBD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D10B99-B415-48AF-9EBC-F97327ACBBD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5DDF019-037E-47F9-B54F-99568FB73E9D}
+	EndGlobalSection
+EndGlobal

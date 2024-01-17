@@ -1,0 +1,12 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+/BookMarketWeb/bin/Debug/net8.0
+/.vs/BookMarket/FileContentIndex
+/.idea/.idea.BookMarket/.idea
+/BookMarketWebTests/bin/Debug/net8.0
+/BookMarketWebTests/obj
+/BookMarket.sln.DotSettings.user
+/Builder.drawio
+/BookMarketWeb/obj

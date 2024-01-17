@@ -1,0 +1,3 @@
+﻿@model BookMarketWeb.Models.CartDto
+
+<a id="cart-link" class="nav-link text-dark" href="@Url.Action("Get", "Cart")">Корзина (@Model.Lines.Count())</a>

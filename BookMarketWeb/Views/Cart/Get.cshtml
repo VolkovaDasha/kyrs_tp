@@ -1,0 +1,66 @@
+﻿@model BookMarketWeb.Models.CartDto
+
+<div class="container">
+  <main>
+    <div class="row g-5">
+      <div class="col-6 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Заказ</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          @foreach (var line in Model.Lines)
+          {
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">@line.Book.Title - @line.Quantity шт.</h6>
+              </div>
+              <span class="text-muted"> @line.Amount руб.</span>
+            </li>
+          }
+          
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Всего</span>
+            <strong>@Model.TotalAmount</strong>
+          </li>
+        </ul>
+        
+      </div>
+      <div class="col-6">
+        <h4 class="mb-3">Оформление заказа</h4>
+        <form class="needs-validation" novalidate="">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Необходимо указать Имя
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Фамилия</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Необходимо указать Фамилию
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" required="required" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Необходимо указать Email для подтверждения заказа
+              </div>
+            </div>
+            
+          </div>
+          
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Заказать</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>

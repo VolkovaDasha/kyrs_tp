@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  book-market:
+    container_name: book-market
+    image: book-market
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    restart: always
